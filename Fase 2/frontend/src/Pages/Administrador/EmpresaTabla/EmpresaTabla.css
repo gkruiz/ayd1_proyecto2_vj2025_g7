@@ -1,0 +1,30 @@
+.tabla-container {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+h2 {
+  margin-bottom: 15px;
+  color: #222;
+}
+
+.tabla-empresas {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.tabla-empresas th,
+.tabla-empresas td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: left;
+}
+
+.tabla-empresas th {
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+.tabla-empresas tr:nth-child(even) {
+  background-color: #fafafa;
+}

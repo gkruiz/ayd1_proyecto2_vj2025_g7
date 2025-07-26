@@ -1,0 +1,30 @@
+version: '3.8'
+
+services:
+  backend:
+    build:
+      context: ./backend
+    image: luisdelt/fase2-backendv2:latest
+    container_name: backend-python
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./backend/recursos/Wallet_Grupo7:/app/recursos/Wallet_Grupo7
+    environment:
+      - LD_LIBRARY_PATH=/opt/oracle/instantclient
+    networks:
+      - app-network
+
+  frontend:
+    build:
+      context: ./frontend
+    image: luisdelt/fase2-frontendv2:latest
+    container_name: frontend-react
+    ports:
+      - "80:80"
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge

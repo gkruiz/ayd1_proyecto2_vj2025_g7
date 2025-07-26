@@ -1,0 +1,60 @@
+image: docker:latest
+
+services:
+  - docker:dind
+
+stages:
+  - build
+  - test
+  - deploy
+
+# -----------------BUILD--------------------
+build:build_images:
+  stage: build
+  script:
+    - echo "---------------INICIO DE BUILD--------------------"
+    - docker info
+    - docker system prune -a -f || true
+    - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USER" --password-stdin
+    - docker build -t "${BACKEND_IMAGE_NAME}:${IMAGE_TAG}" "Fase 2/backend"
+    - docker push "${BACKEND_IMAGE_NAME}:${IMAGE_TAG}"
+    - docker build -t "${FRONTEND_IMAGE_NAME}:${IMAGE_TAG}" "Fase 2/frontend"
+    - docker push "${FRONTEND_IMAGE_NAME}:${IMAGE_TAG}"
+    - echo "---------------FINAL DE BUILD--------------------"
+  only:
+    refs:
+      - main
+
+# -----------------TEST--------------------
+test:run_backend_tests:
+  stage: test
+  needs: ["build:build_images"]
+  image: python:3.9
+  script:
+    - echo "---------------INICIO DE TEST--------------------"
+    - python3 --version
+    - pip3 --version
+    - cd "Fase 2/backend/tests"
+    - if [ -f requirements.txt ]; then pip3 install -r requirements.txt; fi
+    - python3 test_app.py
+    - echo "---------------FINAL DE TEST--------------------"
+  only:
+    refs:
+      - main
+
+# -----------------DEPLOY--------------------
+deploy:deploy_to_server:
+  stage: deploy
+  needs: ["test:run_backend_tests"]
+  script:
+    - echo "---------------INICIO DE DEPLOY--------------------"
+    - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USER" --password-stdin
+    - docker pull "${BACKEND_IMAGE_NAME}:${IMAGE_TAG}" || exit 1
+    - docker pull "${FRONTEND_IMAGE_NAME}:${IMAGE_TAG}" || exit 1
+    - cd "Fase 2"
+    - docker compose down || true
+    - docker compose up -d --remove-orphans
+    - echo "---------------FINAL DE DEPLOY--------------------"
+  only:
+    refs:
+      - main

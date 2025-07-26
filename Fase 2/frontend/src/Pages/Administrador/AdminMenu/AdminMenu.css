@@ -1,0 +1,33 @@
+.admin-container {
+  width: 300px;
+  margin: 40px auto;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #f2f2f2;
+  font-family: Arial, sans-serif;
+}
+
+.admin-title {
+  text-align: center;
+  color: #222;
+  margin-bottom: 20px;
+}
+
+.admin-menu {
+  list-style-type: none;
+  padding: 0;
+}
+
+.admin-menu li {
+  padding: 12px;
+  margin: 8px 0;
+  background-color: #007acc;
+  color: white;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.admin-menu li:hover {
+  background-color: #005a99;
+}

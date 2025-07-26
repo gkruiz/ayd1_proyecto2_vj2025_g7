@@ -1,0 +1,115 @@
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.user-card {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header h2 {
+  margin: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.logout {
+  font-size: 24px;
+  cursor: pointer;
+  padding: 8px;
+  transition: transform 0.2s;
+}
+
+.logout:hover {
+  transform: scale(1.2);
+}
+
+.subtitle {
+  margin: 10px 0 20px;
+  font-weight: bold;
+}
+
+.search-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 25px;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.search-input {
+  flex: 2;
+  min-width: 300px;
+  padding: 12px 16px;
+  font-size: 18px;
+  border-radius: 5px;
+  border: 1px solid #aaa;
+  box-sizing: border-box;
+}
+
+.search-button {
+  padding: 12px 22px;
+  font-size: 16px;
+  border-radius: 5px;
+  background-color: #2a78d3;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.2s;
+}
+
+.search-button:hover {
+  background-color: #1f5ca9;
+}
+
+.user-table {
+  width: 100%;
+  min-width: 600px;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.user-table th,
+.user-table td {
+  border: 1px solid #ccc;
+  padding: 14px;
+  text-align: center;
+  font-size: 16px;
+}
+
+.apply-btn {
+  background-color: #2a78d3;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-weight: bold;
+  transition: background-color 0.2s;
+}
+
+.apply-btn:hover {
+  background-color: #1f5ca9;
+}
+
+/* Scroll horizontal solo cuando sea necesario */
+.user-card {
+  overflow-x: auto;
+}

@@ -1,0 +1,112 @@
+USUARIO
+id_usuario
+Nombre
+Apellidos
+CUI
+Género
+Dirección
+Teléfono
+Fecha de nacimiento
+Correo
+Contraseña
+Estado 			--> 'Activo' o 'inactivo' ---- Puede darlo de baja el admin.
+Estado_laboral 		--> 'contratado' o 'sin empleo'
+fecha_creacion
+
+
+EMPRESA
+id_empresa
+Nombre
+NIT
+Dirección fiscal
+Teléfono
+Giro de negocio
+Correo
+Contraseña
+Estado --> 'Aprobada' o 'no aprobada' ---- Puede aprobarlo o darlo de baja el admin.
+cant_empleos_activos    PARA GENERAR REPORTE
+cant_cvs_recibidos    	PARA GENERAR REPORTE
+fecha_creacion
+
+
+PUESTO
+id_puesto
+id_empresa
+nombre_del_puesto
+sueldo_ofrecido
+tipo_de_contrato
+jornada_laboral
+modalidad
+descripción
+educación_minima
+anios_experciencia
+idiomas_solicitados
+edad_minima
+edad_maxima
+cant_solicitantes	DEBE INCREMENTAARSE LOS CVs RECIBIDOS EN EMPRESA PARA SACAR EL REPORTE DE EMPRESA MÁS SOLICITADA
+fecha_publicacion
+estado 			'ACTIVO' o 'INACTIVO' 	se puede modificar para ver si aún está disponible o se contrató a un usuario
+
+
+SOLICITUD_EMPLEO	CADA QUE SE RECIBE UN CV SE ACTUALIZA LA CANT DE SOLICITANTES EN TABLA PUESTO
+id_solicitud
+id_puesto
+id_usuario
+cv    		----> ESTUDIAR CÓMO RECIBIR EL PDF EN LA BD
+estado   	----> 'enviada' o 'rechazada'
+fecha_aplicacion
+
+
+TRABAJADOR
+id_trabajador
+id_usuario
+id_puesto
+fecha_inicio
+fecha_fin
+
+
+ADMINISTRADOR
+id_admin
+usuario 
+contraseña
+2FA 		--> Necesario cargar el archivo con la contraseña encriptada - auth.ayd1
+
+
+
+
+========== ENDPOINTS REQUERIDOS ===========
+
+-------- GENERALES ---------
+1. iniciar sesión
+2. cerrar sesión
+
+-------- ADMINISTRADOR -----------
+
+1. archivo auth.ayd para autenticación 
+2. aceptar/modificar estado de empresas
+3. ver empresas
+4. ver usuarios
+5. modificar estado de usuarios (dar de baja)
+6. generar reportes
+
+
+
+-------- USUARIO ------------
+1. crear cuenta
+2. visualizar datos de puestos laborales
+3. buscar empleos por área
+4. consultar a la tabla de PUESTO toda la información y mostrarla
+5. cargar cv 
+6. ver el listado de aplicaciones conforme el id_solicitud
+7. actualizar el estado de postulación en la tabla SOLICITUD_EMPLEO
+
+
+-------- EMPRESA ----------
+1. visualizar ofertas laborales activas
+2. atender aplicación ---> Cuando se visualiza el cv debe actualizarse el estado
+3. publicar puesto de trabajo
+4. modificar estado del puesto de trabajo ---> por si ya se contrató a alguien y la plaza ya no está disponible
+5. visualizar el historial de puestos de trabajo
+6. contactar vía correo electrónico a los aplicantes
+
+

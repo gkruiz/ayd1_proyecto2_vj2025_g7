@@ -1,0 +1,51 @@
+.container {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.company-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.company-table th,
+.company-table td {
+  padding: 12px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+.company-table th {
+  background-color: #f4f4f4;
+}
+
+.btn {
+  padding: 6px 12px;
+  margin: 0 4px;
+  border: none;
+  cursor: pointer;
+  color: white;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.accept {
+  background-color: #4CAF50;
+}
+
+.reject {
+  background-color: #f44336;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+.btn:active {
+  opacity: 0.8;
+}

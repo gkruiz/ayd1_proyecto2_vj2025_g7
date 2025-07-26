@@ -1,0 +1,52 @@
+.container {
+  width: 300px;
+  margin: 50px auto;
+  padding: 20px;
+  border: 2px solid #007acc;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  font-family: Arial, sans-serif;
+}
+
+.container h2 {
+  text-align: center;
+  color: #007acc;
+}
+
+.container input[type="file"] {
+  display: block;
+  margin: 15px 0;
+  width: 100%;
+}
+
+.container button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007acc;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.container button:hover {
+  background-color: #005a99;
+}
+
+.status {
+  margin-top: 10px;
+  color: #cc0000;
+  font-size: 0.9em;
+  text-align: center;
+}
+
+.container .error {
+  color: #cc0000;
+  font-size: 0.9em;
+  text-align: center;
+}
+.container .success {
+  color: #28a745;
+  font-size: 0.9em;
+  text-align: center;
+}

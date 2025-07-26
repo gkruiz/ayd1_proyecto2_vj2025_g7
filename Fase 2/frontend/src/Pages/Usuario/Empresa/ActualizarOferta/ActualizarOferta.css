@@ -1,0 +1,225 @@
+.actualizar-oferta-bg {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #e3f0ff 0%, #f9f9f9 100%);
+    padding: 40px 0;
+}
+
+.actualizar-oferta-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 32px 24px;
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+}
+
+.user-card {
+    background: #f7fbff;
+    border-radius: 12px;
+    padding: 32px 24px;
+    box-shadow: 0 2px 12px rgba(25, 118, 210, 0.07);
+}
+
+.header h2 {
+    color: #1976d2;
+    margin-bottom: 12px;
+    font-size: 2rem;
+}
+
+.btn-regresar {
+    margin: 20px 0;
+    padding: 8px 16px;
+    background: #1976d2;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.btn-regresar:hover {
+    background: #125ea7;
+}
+
+.subtitle {
+    color: #333;
+    font-size: 1.1rem;
+    margin-bottom: 18px;
+}
+
+.spinner-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px 0;
+}
+
+.spinner {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border: 5px solid #e3e3e3;
+    border-top-color: #1976d2;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin-bottom: 10px;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.loading-text {
+    color: #1976d2;
+    font-weight: bold;
+}
+
+.error-message {
+    color: #d32f2f;
+    background: #ffeaea;
+    border: 1px solid #f8bcbc;
+    padding: 10px 18px;
+    border-radius: 6px;
+    margin-bottom: 16px;
+    text-align: center;
+}
+
+.form-edicion {
+    background: #e3f0ff;
+    border-radius: 10px;
+    padding: 24px 18px;
+    margin-bottom: 28px;
+    box-shadow: 0 2px 8px rgba(25, 118, 210, 0.05);
+}
+
+.form-edicion h3 {
+    color: #1976d2;
+    margin-bottom: 18px;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 16px;
+    margin-bottom: 18px;
+}
+
+.form-edicion label {
+    display: flex;
+    flex-direction: column;
+    font-weight: 500;
+    color: #333;
+}
+
+.form-edicion input {
+    margin-top: 4px;
+    padding: 7px 10px;
+    border: 1px solid #b6c6e3;
+    border-radius: 5px;
+    font-size: 1rem;
+    background: #fff;
+    transition: border 0.2s;
+}
+
+.form-edicion input:focus {
+    border: 1.5px solid #1976d2;
+    outline: none;
+}
+
+.form-buttons {
+    display: flex;
+    gap: 12px;
+    justify-content: flex-end;
+}
+
+.btn-guardar {
+    background: #1976d2;
+    color: #fff;
+    border: none;
+    padding: 8px 18px;
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.btn-guardar:hover {
+    background: #125ea7;
+}
+
+.btn-cancelar {
+    background: #e0e0e0;
+    color: #333;
+    border: none;
+    padding: 8px 18px;
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.btn-cancelar:hover {
+    background: #bdbdbd;
+}
+
+.tabla-scroll {
+    overflow-x: auto;
+}
+
+.user-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 18px;
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 1px 6px rgba(25, 118, 210, 0.05);
+}
+
+.user-table th,
+.user-table td {
+    padding: 10px 12px;
+    text-align: center;
+}
+
+.user-table th {
+    background: #1976d2;
+    color: #fff;
+    font-weight: 600;
+}
+
+.user-table tr:nth-child(even) {
+    background: #f3f7fa;
+}
+
+.user-table tr:hover {
+    background: #e3f0ff;
+}
+
+.btn-editar {
+    background: #43a047;
+    color: #fff;
+    border: none;
+    padding: 5px 12px;
+    border-radius: 4px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.btn-editar:hover {
+    background: #2e7031;
+}
+.tabla-scroll {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.user-table {
+    width: auto; 
+    min-width: 900px;
+    margin: 0 auto;
+}

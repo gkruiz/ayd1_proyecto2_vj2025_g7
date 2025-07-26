@@ -1,0 +1,18 @@
+    .card {
+      border-radius: 1rem;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .table thead {
+      background-color: #f1f5f9;
+    }
+
+    .btn-success,
+    .btn-danger {
+      border-radius: 0.5rem;
+    }
+
+
+    .text-center button{
+      width: 50px;
+    }

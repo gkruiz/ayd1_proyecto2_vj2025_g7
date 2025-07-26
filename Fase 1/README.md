@@ -98,7 +98,7 @@
 
 ## 2. Diagrama de Casos de Uso
 
-  ![Caso De Uso Proyecto2](Imagenes/CasosDeUsoProyecto2.drawio.png)
+  ![Caso De Uso Proyecto2](Documentación/Imagenes/CasosDeUsoProyecto2.drawio.png)
 ---
 
 ## 3. Historias de Usuario
@@ -216,28 +216,28 @@
 
 ## 4. Diagrama de Clases
 
-![Diagrama de Clases](Imagenes/clase.png)
+![Diagrama de Clases](Documentación/Imagenes/clase.png)
 
 ---
 
 ## 5. Diagrama de Componentes
-![DC](Imagenes/Componentes.png)
+![DC](Documentación/Imagenes/Componentes.png)
 
 ---
 
 ## 6. Diagrama de Despliegue
 
-![DD](Imagenes/Despliegue.png)
+![DD](Documentación/Imagenes/Despliegue.png)
 ---
 
 ## 7. Diagrama Entidad-Relación
 
-  ![ER](Imagenes/ER.png)
+  ![ER](Documentación/Imagenes/ER.png)
 ---
 
 ## 8. Mockups / Prototipos de Interfaces
 
-  ![Mockup de la Interfaz Principal](Imagenes/mockup_page-0001.jpg)
+  ![Mockup de la Interfaz Principal](Documentación/Imagenes/mockup_page-0001.jpg)
 
 ---
 
@@ -289,7 +289,7 @@ def test_aprobar_empresa_no_autorizado(client, mocker):
 ```
 
 ### Captura de las pruebas unitarias:
-  ![PU](./Imagenes/pruebasunit.jpg)
+  ![PU](./Documentación/Imagenes/pruebasunit.jpg)
 
 ### Explicación del código erróneo:
 
@@ -330,7 +330,7 @@ Esta prueba no es correcta y nos ayuda a validar que la implementación del endp
 ### Herramienta utilizada
 Selenium
 
-![Selenium](Imagenes/seleniumlogo.png)
+![Selenium](Documentación/Imagenes/seleniumlogo.png)
 
 ### Cobertura
 Pruebas realizadas:
@@ -351,34 +351,34 @@ python selenium
 
 ### Resultados Esperados
 Primero incia en el menú principal
-![Menú principal](Imagenes/menuadminauto.png)
+![Menú principal](Documentación/Imagenes/menuadminauto.png)
 
 Luego se va al login y se escribe automaticamente las credenciales
 NOTA: Esto realizará una autenticación a un usuario de tipo ADMIN
 
-![Login Auto](Imagenes/loginauto.png)
+![Login Auto](Documentación/Imagenes/loginauto.png)
 
 Se realiza la segunda autenticación con un archivo de una ruta definifa.
 
-![2FA Auto](Imagenes/2FAauto.png)
+![2FA Auto](Documentación/Imagenes/2FAauto.png)
 
 Posterior a eso se activa la alerta que será atendida automáticamente.
 
-![ALERTA 2FA](Imagenes/alerta2FAauto.png)
+![ALERTA 2FA](Documentación/Imagenes/alerta2FAauto.png)
 
 Luego se dirije al respectivo menú de administrador.
 
-![Menu admin AUTO](Imagenes/menuadminauto.png)
+![Menu admin AUTO](Documentación/Imagenes/menuadminauto.png)
 
 Revisa las tablas de empresas pendientes.
 
-![Tablas empresa](Imagenes/empresapendienteauto.png)
+![Tablas empresa](Documentación/Imagenes/empresapendienteauto.png)
 
 Por ultimo regresa al menú del admin, cierra sesión y se termina las pruebas satisfactoriamente.
-![Logout AUTO](Imagenes/logoutauto.png)
+![Logout AUTO](Documentación/Imagenes/logoutauto.png)
 
 Resultados en consola del proceso realizado.
-![Consola](Imagenes/consola.png)
+![Consola](Documentación/Imagenes/consola.png)
 
 ## 10. Herramienta de Gestión Kanban
 
@@ -393,18 +393,18 @@ Resultados en consola del proceso realizado.
 
 **Inicio del Sprint**
 
-![Kanban Inicial](Imagenes/kanbaninicial.png)
+![Kanban Inicial](Documentación/Imagenes/kanbaninicial.png)
 
 **Durante el Sprint**
 
 - Primer cambio  
-  ![Kanban 1](Imagenes/kanban1.png)
+  ![Kanban 1](Documentación/Imagenes/kanban1.png)
 
 - Segundo cambio  
-  ![Kanban 2](Imagenes/kanban2.png)
+  ![Kanban 2](Documentación/Imagenes/kanban2.png)
 
 **Final del Sprint**  
-![Kanban Final 1](Imagenes/kanbanfinal1.png)
+![Kanban Final 1](Documentación/Imagenes/kanbanfinal1.png)
 
 ---
 
@@ -412,26 +412,26 @@ Resultados en consola del proceso realizado.
 
 **Inicio del Sprint**
 
-![Kanban Inicial 2](Imagenes/kanbaninicial2.png)
-![Kanban Inicial 2_1](Imagenes/kanbaninicial2_1.png)
-![Kanban Inicial 2_2](Imagenes/kanbaninicial2_2.png)
-![Kanban Inicial 2_3](Imagenes/kanbaninicial2_3.png)
+![Kanban Inicial 2](Documentación/Imagenes/kanbaninicial2.png)
+![Kanban Inicial 2_1](Documentación/Imagenes/kanbaninicial2_1.png)
+![Kanban Inicial 2_2](Documentación/Imagenes/kanbaninicial2_2.png)
+![Kanban Inicial 2_3](Documentación/Imagenes/kanbaninicial2_3.png)
 
 **Durante el Sprint**
 
 - Primer cambio  
-  ![Kanban 3](Imagenes/kanban3.png)
+  ![Kanban 3](Documentación/Imagenes/kanban3.png)
 
 - Segundo cambio
-  ![Kanban 4](Imagenes/kanban4.png)
+  ![Kanban 4](Documentación/Imagenes/kanban4.png)
 
 - Tercer cambio
-  ![Kanban 5](Imagenes/kanban5.png)
-  ![Kanban 51](Imagenes/kanban5_1.png)
+  ![Kanban 5](Documentación/Imagenes/kanban5.png)
+  ![Kanban 51](Documentación/Imagenes/kanban5_1.png)
 
 - Ultimo cambio
-  ![Kanban6](Imagenes/kanban6.png)
-  ![Kanban61](Imagenes/kanban61.png)
+  ![Kanban6](Documentación/Imagenes/kanban6.png)
+  ![Kanban61](Documentación/Imagenes/kanban61.png)
 
 ---
 
